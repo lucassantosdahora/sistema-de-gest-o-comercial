@@ -1,0 +1,132 @@
+.login_body {
+    background-color: #e8e7e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login_main {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+}
+
+.login_imagem {
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_form {
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização do formulário */
+form {
+    background-color: #000000bf;
+    width: 100%;
+    max-width: 40rem; 
+    padding: 1.25rem; 
+    border-radius: 1rem; 
+    box-shadow: 0 0.5rem 0.75rem rgba(19, 19, 19, 0.973); 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+/* Estilização dos grupos de formulário */
+.form-group {
+    width: 100%;
+    margin-top: 1.25rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização dos rótulos */
+.form-group label {
+    color: #fff; 
+    margin-bottom: 0.625rem; 
+    align-self: flex-start; 
+}
+
+/* Estilização dos campos de entrada */
+.form-control {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0 0.625rem; 
+    border: 0.0625rem solid #ccc; 
+    border-radius: 0.3125rem; 
+    box-sizing: border-box; 
+}
+
+/* Estilização do botão de envio */
+.btn-submit {
+    background-color: #08a31d;
+    color: #fcfcfc; 
+    border: none; 
+    width: 100%;
+    height: 3.125rem;
+    border-radius: 0.3125rem; 
+    padding: 0.625rem 1.25rem; 
+    margin-top: 1.25rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+}
+
+.btn-submit:hover {
+    background-color: #038114; 
+}
+
+.Cadastro {
+    margin-top: 0.9375rem; 
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.Cadastro:hover {
+    color: #c8c6c6;
+}
+
+@media (max-width: 800px) {
+    .login_body {
+        background-color: #e8e7e3;
+        display: block;
+        
+    }
+    .login_main {
+        flex-direction: column;
+        width: 100%;
+        height:auto;
+    }
+    .login_imagem{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 25vh;
+    }
+    .login_imagem img {
+        margin-top: 8rem;
+        width: 100%; 
+        height: auto; 
+        max-width: 25rem; 
+    }
+    .login_form{
+     width: 100%;
+    }
+    form{
+        width: 80%;
+    }
+}

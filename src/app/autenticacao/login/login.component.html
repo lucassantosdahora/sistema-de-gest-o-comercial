@@ -1,0 +1,28 @@
+<section class="login_body">
+  <div class="login_main">
+    <div class="login_imagem">
+      <img src="assets/logo.png" alt="logo do site" width="400" height="400">
+    </div>
+    <div class="login_form">
+      <div class="login_form">
+        <form (ngSubmit)="onSubmit()">
+          <div class="img-utilizador">
+            <img src="assets/do-utilizador.png" alt=""  width="80" height="80">
+          </div>
+          <div class="form-group">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" class="form-control" [(ngModel)]="usuario.username"
+              required>
+          </div>
+          <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" class="form-control" [(ngModel)]="usuario.password"
+              required>
+          </div>
+          <button type="submit" class="btn-submit">Entrar</button>
+          <a href="" class="Cadastro">Cadastrar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
