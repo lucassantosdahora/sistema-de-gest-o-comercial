@@ -3,13 +3,26 @@
     <h1>TRADE-<span class="span1">EASE</span></h1>
     <img src="/assets/icons8-sincronizar-48.png" alt="">
   </div>
+  <div class="menu_usuario">
+    <div class="menu_perfil">
+      <img src="/assets/do-utilizador.png" alt="" height="23" width="23">
+    </div>
+    <div class="menu_sair">
+      <img src="/assets/icons8-sair-32.png" alt="" height="25" width="25">
+    </div>
+  </div>
 </header>
 
 <main *ngIf="showHeaderFooter">
-  <div class="menu_sidebar">
+  <div *ngIf="showToggleContainer" class="toggle_container">
+    <div (click)="sidebarOpen()" class="toggle_button">
+      <img src="/assets/icons8-cardápio-50.png" alt="" height="30" width="30">
+    </div>
+  </div>
+  <div *ngIf="showMenuSidebar" class="menu_sidebar">
     <div class="header_sidebar">
       <div><h2 class="title_sidebar">Menu</h2></div>
-      <div class="exit_sidebar"><img src="assets/icons8-excluir-48.png" alt="" height="25" width="25"></div>
+      <div (click)="sidebarOpen()" class="icons_sidebar"><img src="assets/icons8-excluir-48.png" alt="" height="25" width="25"></div>
     </div>
     <nav>
       <ul>
@@ -20,13 +33,10 @@
           <a href="">Sistema de vendas</a>
         </li>
         <li>
-          <a href="">Ultimos Lucros</a>
+          <a href="">Lucro da semana</a>
         </li>
       </ul>
     </nav>
-    <div class="footer_sidebar">
-      <h2>perfil</h2>
-    </div>
   </div>
   <div class="menu_conteudo">
     <h2>MENU PRINCIPAL</h2>

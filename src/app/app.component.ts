@@ -11,6 +11,19 @@ export class AppComponent implements OnInit {
   title = 'trade-ease';
 
   showHeaderFooter: boolean = true;
+  showToggleContainer: boolean = true;
+  showMenuSidebar: boolean = false;
+
+  sidebarOpen(){
+   if (this.showToggleContainer === true) {
+    this.showMenuSidebar = !this.showMenuSidebar;
+    this.showToggleContainer = !this.showToggleContainer;
+   }
+   else{
+    this.showMenuSidebar = !this.showMenuSidebar;
+    this.showToggleContainer = !this.showToggleContainer;
+   }
+  }
 
   constructor(private router: Router) {}
 
