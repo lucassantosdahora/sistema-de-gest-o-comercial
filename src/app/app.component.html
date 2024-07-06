@@ -1,1 +1,41 @@
-<router-outlet></router-outlet>
+<header *ngIf="showHeaderFooter">
+  <div class="menu_logo">
+    <h1>TRADE-<span class="span1">EASE</span></h1>
+    <img src="/assets/icons8-sincronizar-48.png" alt="">
+  </div>
+</header>
+
+<main *ngIf="showHeaderFooter">
+  <div class="menu_sidebar">
+    <div class="header_sidebar">
+      <div><h2 class="title_sidebar">Menu</h2></div>
+      <div class="exit_sidebar"><img src="assets/icons8-excluir-48.png" alt="" height="25" width="25"></div>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="">Produtos</a>
+        </li>
+        <li>
+          <a href="">Sistema de vendas</a>
+        </li>
+        <li>
+          <a href="">Ultimos Lucros</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer_sidebar">
+      <h2>perfil</h2>
+    </div>
+  </div>
+  <div class="menu_conteudo">
+    <h2>MENU PRINCIPAL</h2>
+  </div>
+  <router-outlet></router-outlet>
+</main>
+
+<footer *ngIf="showHeaderFooter">
+  <!-- Conteúdo do rodapé -->
+</footer>
+
+<router-outlet *ngIf="!showHeaderFooter"></router-outlet>
